@@ -227,18 +227,8 @@ h5 {
     .row {
         text-align: center;
     }
-    .col-4, .col-2 {
+    .col-4{
         flex-basis: 100%;
-    }
-    .single-product .row {
-        text-align: left;
-    }
-    .single-product .col-2 {
-        padding: 20px 0;
-    }
-    .single-product h1 {
-        font-size: 26px;
-        line-height: 32px;
     }
 }
 /* CATEGORY */
@@ -412,6 +402,22 @@ hr {
 }
 /* FOOTER */
 
+.product-small-img img {
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+}
+
+.product {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+
+
 /* BOOK DETAILS PAGE */
 .col-2 {
     flex-basis: 50%;
@@ -488,6 +494,26 @@ input:focus {
 .small-img-col {
     flex-basis: 24%;
     cursor: pointer;
+}
+
+/* Modify the category section in the small screen */
+@media(max-width: 960px) {
+    .row {
+        text-align: center;
+    }
+    .col-2 {
+        flex-basis: 100%;
+    }
+    .single-product .row {
+        text-align: left;
+    }
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
 }
 
 /* BOOK DETAILS PAGE */
