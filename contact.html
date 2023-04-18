@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Header Section -->
-    <section class="header">
+    <section class="book-detail-header">
         <nav>
             <h2 class="logo">B-BRIGHT</h2>
             <div class="nav-links" id="navLinks">
@@ -25,14 +25,67 @@
             </div>  
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
-        <div class="text-box">
-            <h1>Contact Us</h1>
-        </div>
     </section>
     <!-- Header Section -->
+
+    <!-- Map Section -->
+    <section class="map">
+        <h1 class="title">Our Location</h1>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.3870103991592!2d106.69219088711425!3d10.729450541237822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1678337072898!5m2!1sen!2s" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Map Section -->
    
     <!-- Contact Section -->
+    <section class="contact">
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="contact-purpose">Contact Purpose:</label>
+                    <select id="contact-purpose" name="contact-purpose">
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="contact-pref">Contact Preference:</label>
+                    <input type="checkbox" id="email-pref" name="contact-pref" value="email">
+                    <label for="email-pref">By email</label>
+                    <input type="checkbox" id="phone-pref" name="contact-pref" value="phone">
+                    <label for="phone-pref">By phone</label>
+                </div>
+                <div class="form-group">
+                    <label for="newsletter">Receive Weekly Newsletter:</label>
+                    <input type="radio" id="yes-newsletter" name="newsletter" value="yes" checked>
+                    <label for="yes-newsletter">Yes</label>
+                    <input type="radio" id="no-newsletter" name="newsletter" value="no">
+                    <label for="no-newsletter">No</label>
+                </div>
+                <div class="form-group">
+                    <label for="extra-notes">Extra Notes:</label>
+                    <textarea id="extra-notes" name="extra-notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="button">
+                    <input type="reset" value="Reset" class="button">
+                </div>
+            </form>
+        </div>
+    </section>
     <!-- Contact Section -->
 
     <!-- Footer Section -->
