@@ -402,26 +402,15 @@ hr {
 }
 /* FOOTER */
 
-.product-small-img img {
-    height: 92px;
-    margin: 10px 0;
-    cursor: pointer;
-    display: block;
-}
-
-.product {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-}
-
-
-
 /* BOOK DETAILS PAGE */
+.small-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 50px;
+}
 .col-2 {
     flex-basis: 50%;
-    min-width: 300px;
+    min-width: 400px;
 }
 
 .col-2 img {
@@ -429,14 +418,15 @@ hr {
     padding: 50px 0;
 }
 
-.col-2 h1 {
+.descripton h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 }
 
-.col-2 p {
+.description p {
     color: #555;
+    text-align: left;
 }
 
 .button {
@@ -459,7 +449,7 @@ hr {
 }
 
 .single-product .col-2 {
-    padding: 20px;
+    padding: 100px;
 }
 
 .single-product h4 {
@@ -481,7 +471,11 @@ input:focus {
     outline: none;
 }
 
-.single-product .fa {
+.description {
+    margin: 50px 25px;
+}
+
+.description .fa {
     color: #ff523b;
     margin-left: 10px;
 }
@@ -495,6 +489,14 @@ input:focus {
     flex-basis: 24%;
     cursor: pointer;
 }
+
+/* .small-img-col img {
+    opacity: 1.6;
+}
+
+.small-img-col img:hover {
+    opacity: 1;
+} */
 
 /* Modify the category section in the small screen */
 @media(max-width: 960px) {
