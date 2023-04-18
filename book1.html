@@ -9,8 +9,8 @@
     <title>COSC2430 | Web Programming Bookstore Hackathon</title>
 </head>
 <body>
-    <!-- Header Section -->
-    <section class="header">
+    <!-- Header Section starts -->
+    <section class="book-detail-header">
         <nav>
             <h2 class="logo">B-BRIGHT</h2>
             <div class="nav-links" id="navLinks">
@@ -25,19 +25,102 @@
             </div>  
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
-        <div class="text-box">
-            <h1>Contact Us</h1>
-        </div>
     </section>
-    <!-- Header Section -->
+    <!-- Header Section ends -->
    
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-
-    <!-- Footer Section -->
-    <section class="footer">
+    <!-- Book Details Section starts -->
+    <div class="small-container single-product">
         <div class="row">
+            <div class="col-2">
+                <img src="img/book1.jpg" width="100%">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="img/book1.jpg" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/book1.jpg" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/book1.jpg" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/book1.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Fiction / Erotic-Fiction</p>
+                <h1>Harry Potter And The Philosopher's Stone</h1>
+                <h4>$60.00</h4>
+                <input type="number" value="1">
+                <a href="" class="button">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-ident"></i></h3>
+                <br>
+                <p>This is a story of Harry Potter This is a story of Harry Potter This is a story of Harry Potter This is a story of Harry Potter</p>
+            </div>
+        </div>
+    </div>
+    <!-- Book Details Section ends -->
+
+    <!-- Related Books Section starts -->
+    <h2 class="title">Related Books</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="book1.html"><img src="img/book1.jpg"></a>
+            <h3>Harry Potter And The Philosopher's Stone</h3>
+            <h5>written by J.K.Rowling</h5>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$60.00</p>
+        </div>
+        <div class="col-4">
+            <a href=""><img src="img/book2.jpg"></a>
+            <h3>Harry Potter And The Chamber Of Secret</h3>
+            <h5>written by J.K.Rowling</h5>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$53.00</p>
+        </div>
+        <div class="col-4">
+            <a href=""><img src="img/book3.jpg"></a>
+            <h3>Harry Potter And The Prisoner Of Azkaban</h3>
+            <h5>written by J.K.Rowling</h5>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$51.00</p>
+        </div>
+        <div class="col-4">
+            <a href=""><img src="img/book4.jpg"></a>
+            <h3>That Night</h3>
+            <h5>written by Nidhi Upadhyay</h5>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+    <!-- Related Books Section ends -->
+
+    <!-- Footer Section starts -->
+    <section class="footer">
+        <div class="fo-row">
             <div class="col">
                 <h2 class="logo">B-BRIGHT</h2>
                 <p>"A book is a gift <br> you can open again and again" <br> - Garrison Keillor - </p>
@@ -79,9 +162,9 @@
         <hr>
         <p class="copyright">Created by <span>Minh Thu</span> | All Rights Reserved!</p>
     </section>
-    <!-- Footer Section --> 
+    <!----- Footer Section ends -----> 
 
-    <!----- JavaScript for Toggle Menu ----->
+    <!----- JavaScript for Toggle Menu starts ----->
     <script>
         // To open and hide to menu
         var navLinks = document.getElementById("navLinks");
@@ -92,6 +175,6 @@
             navLinks.style.right = "-200px";
         }
     </script>
-    <!----- JavaScript for Toggle Menu ----->
+    <!----- JavaScript for Toggle Menu ends ----->
 </body>
 </html>

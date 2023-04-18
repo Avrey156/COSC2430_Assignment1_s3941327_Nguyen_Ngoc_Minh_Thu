@@ -20,6 +20,14 @@
     margin-bottom: 80px;
 }
 
+.book-detail-header {
+    min-height: 20px;
+    width: 100%;
+    position: relative;
+    height: 20%;
+    background: linear-gradient(to right, #2d1100f0, #3c1600eb);
+}
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -82,7 +90,7 @@ nav .logo {
 .text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
-    color:#ababab;
+    color:#ccc;
 }
 
 /* Make a button with hover animation */
@@ -152,7 +160,7 @@ nav .fa{
     justify-content: space-around;
 }
 
-.category {
+.small-container {
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
@@ -219,8 +227,18 @@ h5 {
     .row {
         text-align: center;
     }
-    .col-4 {
+    .col-4, .col-2 {
         flex-basis: 100%;
+    }
+    .single-product .row {
+        text-align: left;
+    }
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
     }
 }
 /* CATEGORY */
@@ -393,3 +411,83 @@ hr {
     }
 }
 /* FOOTER */
+
+/* BOOK DETAILS PAGE */
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 p {
+    color: #555;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    background: #e4573d;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.single-product {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.single-product .col-2 img {
+    padding: 0;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus {
+    outline: none;
+}
+
+.single-product .fa {
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* BOOK DETAILS PAGE */
