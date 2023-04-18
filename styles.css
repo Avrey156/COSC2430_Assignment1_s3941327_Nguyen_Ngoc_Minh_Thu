@@ -409,8 +409,8 @@ hr {
     margin-bottom: 50px;
 }
 .col-2 {
-    flex-basis: 50%;
-    min-width: 400px;
+    flex-basis: 25%;
+    min-width: 300px;
 }
 
 .col-2 img {
@@ -449,7 +449,7 @@ hr {
 }
 
 .single-product .col-2 {
-    padding: 100px;
+    padding: 5px;
 }
 
 .single-product h4 {
@@ -490,14 +490,6 @@ input:focus {
     cursor: pointer;
 }
 
-/* .small-img-col img {
-    opacity: 1.6;
-}
-
-.small-img-col img:hover {
-    opacity: 1;
-} */
-
 /* Modify the category section in the small screen */
 @media(max-width: 960px) {
     .row {
@@ -516,6 +508,11 @@ input:focus {
         font-size: 26px;
         line-height: 32px;
     }
+    .small-img-col {
+        flex-basis: 25%;
+        display: flex;
+    }
+    
 }
 
 /* BOOK DETAILS PAGE */
